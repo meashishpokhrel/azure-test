@@ -1,4 +1,4 @@
-module.exports = async function (context, req) {
+const fun = (context, req) => {
   context.log("JavaScript HTTP trigger function processed a request.");
   let counter = 1;
   const name = req.query.name || (req.body && req.body.name);
@@ -40,8 +40,10 @@ module.exports = async function (context, req) {
     body: {
       res: responseMessage,
       date: dateTime,
-      params: req,
+      params: req.params,
       counter: counter++,
     },
   };
 };
+
+fun();
