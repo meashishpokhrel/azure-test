@@ -40,8 +40,8 @@ module.exports = async function (context, req) {
     body: {
       res: responseMessage,
       date: dateTime,
-      params: req,
       counter: counter++,
+      params: req,
     },
   };
 };
