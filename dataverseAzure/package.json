@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "agentkeepalive": "^4.2.1",
+    "axios": "^0.27.2",
+    "dotenv": "^16.0.1",
+    "pg": "^8.7.3",
+    "request": "^2.88.2",
+    "winston": "^3.8.1"
+  }
+}
